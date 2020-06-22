@@ -1,0 +1,210 @@
+@use 'variables'
+
+body
+    background-color: variables.$primary-color
+
+.principal
+    max-width: 1400px
+    height: 100%
+    margin: 0 auto
+    position: fixed
+    right: 0
+    left: 0
+    top: 0
+    bottom: 0
+    background-color: variables.$primary-color
+    background-image: variables.$mobile-background
+    background-position: bottom
+    background-repeat: no-repeat
+    background-size: 100% 100%  
+    display: flex
+    justify-content: center
+    align-items: center
+
+.contenedor
+    width: 100%
+    height: auto
+    min-height: 500px
+    display: flex
+    flex-direction: column 
+    align-items: center
+    justify-content: center
+
+.contendorOption
+    height: 190px
+    width:90%
+    background-color: variables.$secundary-color
+    margin: 10px
+    display: flex
+    flex-direction: column
+    border-radius: 10px 100px 10px 10px
+
+
+.contenedorOption__optionLogo
+    width: 100%
+    height: 50%
+    display: block
+    display: flex
+    align-items: center
+    padding-left: 10%
+    box-sizing: border-box
+
+.logo
+    content: variables.$logo
+    max-width: 100%
+    object-fit: cover
+
+.contenedorOption_progressIcons
+    width: 100%
+    height: 50%
+    display: block
+    display: flex
+    align-items: flex-start
+    padding-left: 10%
+    box-sizing: border-box
+
+
+.icono
+    width: 45px
+    height: 50px
+    display: inline-block
+    background-color: variables.$primary-color
+    border-radius: 8px
+    display: flex
+    align-items: center
+
+.icono-uno
+    content: variables.$icon-document
+    width: 25px
+    padding: 0px 10px
+    object-fit: contain
+    margin-right: 15px
+.icono-dos
+    content: variables.$icon-folder
+    width: 25px
+    padding: 0px 10px
+    object-fit: contain
+    margin-right: 15px
+.icono-tres
+    content: variables.$icon-upload
+    width: 30px
+    padding: 0px 7.5px
+    object-fit: contain
+  
+
+.contendorProgress
+    height: 150px
+    width: 90%
+    background-color: variables.$secundary-color
+    margin: 10px
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    align-content: flex-start
+    border-radius: 10px
+    position: relative
+
+.contenedorProgress__indication
+    display: flex
+    justify-content: center
+    width: 90%
+    h1  
+        font-family: variables.$font-family-principal 
+        color: variables.$default-color
+        text-align: center
+        font-size: 13px
+        font-weight: 100
+        margin-top: 40px
+
+.contenedorProgress__barContent
+    width: 90%
+    height: 25px
+    background: variables.$bar-container-color
+    border-radius: 7.5px
+    display: flex
+    align-items: center
+    padding: 0px 4px
+
+.contenedorProgress__Percent
+    width: 90%
+    height: 25px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    font-family: variables.$font-family-principal
+    color: variables.$default-color
+    font-size: 12px
+    font-weight: 400
+
+.contenedorProgress__barContent__loading
+    width: 100%
+    min-width: 14px
+    height: 15px
+    background: variables.$bar-color 
+    border-radius: 5.5px
+    animation-name: loading
+    animation-duration: 5s
+    animation-timing-function: ease-in-out
+    display: flex
+    justify-content: flex-end
+    align-items: center
+
+.contenedorProgress__barContent__barIndication
+    height: 11px
+    width: 11px
+    border-radius: 50%
+    background: variables.$default-color  
+    margin-right: 2px
+
+.contenedorProgress__message
+    width: 35%
+    margin-top: 15px
+ 
+.contenedorProgress__message__message
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+    width: 100%
+    height: 60px
+    background-color: variables.$default-color
+    border-radius: 10px 10px 10px 10px
+    h2
+        font-family: variables.$font-family-principal
+        font-weight: 700
+        display: inline-block
+        margin: 0
+        font-size: 30px
+        margin-right: 10px
+
+    p
+        font-family: variables.$font-family-principal
+        display: inline-block
+        font-weight: 400
+        margin: 0
+        font-size: 12px
+        letter-spacing: 1px
+        color: variables.$message-text-color
+
+
+    
+.footer
+    height: 15px
+    position: absolute
+    bottom: 15px
+    right: 0
+    left: 0
+
+.footerAttribution
+    position: relative
+    font-size: 11px
+    text-align: center
+    a
+        color: variables.$optional-color
+
+
+@keyframes loading 
+    from
+        width: 0%
+    to
+        width: 100%

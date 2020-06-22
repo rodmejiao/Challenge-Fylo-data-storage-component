@@ -1,0 +1,52 @@
+@use 'variables'
+
+@media (min-width: variables.$breakpoint-mobile) and (orientation:landscape) 
+    .principal
+        background-size:100% 50%
+        background-image: variables.$desktop-background
+    
+    .contenedor
+        min-height: 190px
+        flex-direction: row
+        justify-content: center
+        align-items: flex-end
+        width: 80%
+    
+    .contendorOption
+         max-width: 300px
+    .contendorProgress
+        max-width: 550px
+
+    .contenedorProgress__indication
+        display: flex
+        justify-content: flex-start
+        width: 90%
+        h1
+            font-size: 15px
+
+    .contenedorProgress__message
+        position: absolute
+        width: auto
+        right:60px
+        display: flex
+        justify-content: flex-end
+        flex-wrap: wrap
+        top: -80px
+        right: 5%
+
+    .contenedorProgress__message__message
+        height: 40px
+        width: 100%
+        padding: 20px 0
+
+
+    .contenedorProgress__message__bulletPoint
+        width: 0px
+        height: 0px
+        border-left: 20px solid transparent
+        border-right: 20px solid white
+        border-bottom: 20px solid transparent
+        border-top: 20px solid white
+        position: relative
+        margin-top: -15px
+        right: 0

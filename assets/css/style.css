@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body {
+  background-color: #0B112C;
+}
+
+.principal {
+  max-width: 1400px;
+  height: 100%;
+  margin: 0 auto;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #0B112C;
+  background-image: url("../images/bg-mobile.svg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor {
+  width: 100%;
+  height: auto;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contendorOption {
+  height: 190px;
+  width: 90%;
+  background-color: #1D2C67;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px 100px 10px 10px;
+}
+
+.contenedorOption__optionLogo {
+  width: 100%;
+  height: 50%;
+  display: block;
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
+  box-sizing: border-box;
+}
+
+.logo {
+  content: url("../images/logo.svg");
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.contenedorOption_progressIcons {
+  width: 100%;
+  height: 50%;
+  display: block;
+  display: flex;
+  align-items: flex-start;
+  padding-left: 10%;
+  box-sizing: border-box;
+}
+
+.icono {
+  width: 45px;
+  height: 50px;
+  display: inline-block;
+  background-color: #0B112C;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.icono-uno {
+  content: url("../images/icon-document.svg");
+  width: 25px;
+  padding: 0px 10px;
+  object-fit: contain;
+  margin-right: 15px;
+}
+
+.icono-dos {
+  content: url("../images/icon-folder.svg");
+  width: 25px;
+  padding: 0px 10px;
+  object-fit: contain;
+  margin-right: 15px;
+}
+
+.icono-tres {
+  content: url("../images/icon-upload.svg");
+  width: 30px;
+  padding: 0px 7.5px;
+  object-fit: contain;
+}
+
+.contendorProgress {
+  height: 150px;
+  width: 90%;
+  background-color: #1D2C67;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  border-radius: 10px;
+  position: relative;
+}
+
+.contenedorProgress__indication {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
+.contenedorProgress__indication h1 {
+  font-family: "Raleway", arial;
+  color: #ffffff;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 100;
+  margin-top: 40px;
+}
+
+.contenedorProgress__barContent {
+  width: 90%;
+  height: 25px;
+  background: #141F4C;
+  border-radius: 7.5px;
+  display: flex;
+  align-items: center;
+  padding: 0px 4px;
+}
+
+.contenedorProgress__Percent {
+  width: 90%;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Raleway", arial;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.contenedorProgress__barContent__loading {
+  width: 100%;
+  min-width: 14px;
+  height: 15px;
+  background: linear-gradient(90deg, #fe9d97 17%, #fb4d92 83%, #fb4d92 100%);
+  border-radius: 5.5px;
+  animation-name: loading;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.contenedorProgress__barContent__barIndication {
+  height: 11px;
+  width: 11px;
+  border-radius: 50%;
+  background: #ffffff;
+  margin-right: 2px;
+}
+
+.contenedorProgress__message {
+  width: 35%;
+  margin-top: 15px;
+}
+
+.contenedorProgress__message__message {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background-color: #ffffff;
+  border-radius: 10px 10px 10px 10px;
+}
+.contenedorProgress__message__message h2 {
+  font-family: "Raleway", arial;
+  font-weight: 700;
+  display: inline-block;
+  margin: 0;
+  font-size: 30px;
+  margin-right: 10px;
+}
+.contenedorProgress__message__message p {
+  font-family: "Raleway", arial;
+  display: inline-block;
+  font-weight: 400;
+  margin: 0;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #97989C;
+}
+
+.footer {
+  height: 15px;
+  position: absolute;
+  bottom: 15px;
+  right: 0;
+  left: 0;
+}
+
+.footerAttribution {
+  position: relative;
+  font-size: 11px;
+  text-align: center;
+}
+.footerAttribution a {
+  color: #3e52a3;
+}
+
+@keyframes loading {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
